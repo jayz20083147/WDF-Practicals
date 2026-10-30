@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h1>StudentHub</h1>
+        <p class="tagline">Student Login Portal</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#timetable">Timetable</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#notice">Notice</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main class="container">
+      <div class="card" style="max-width:520px; margin:0 auto;">
+        <h2 class="center">Student Login</h2>
+        <p class="center">Please login using your registered email address.</p>
+
+        <!-- Dynamic Error Notification via JS -->
+        <div id="alertBox" style="display:none; padding:10px 14px; border-radius:6px; margin-bottom:15px; font-weight:600; text-align:center;"></div>
+
+        <form action="login.php" method="POST">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Minimum 8 characters" minlength="8" required>
+          </div>
+
+          <label style="display:flex; align-items:center; gap:8px; margin-bottom:15px; cursor:pointer;">
+            <input type="checkbox" id="remember" name="remember"> Remember Me
+          </label>
+
+          <div style="display:flex; gap:8px; margin-top:12px;">
+            <input type="submit" value="Login" style="flex:1;">
+            <input type="reset" value="Clear" style="flex:1;">
+          </div>
+        </form>
+
+        <p style="margin-top:16px;" class="center"><a href="#" style="color:var(--text-muted); font-size:0.9rem;">Forgot Password?</a></p>
+        <p class="center" style="margin-top:8px;">Don't have an account? <a href="../Practical-09/register.html" style="color:var(--primary); font-weight:600;">Register Here</a></p>
+      </div>
+      <footer class="footer">&copy; 2026 StudentHub</footer>
+    </main>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const alertBox = document.getElementById('alertBox');
+    if (params.get('error') === 'invalid') {
+      alertBox.style.display = 'block';
+      alertBox.style.background = '#f8d7da';
+      alertBox.style.color = '#721c24';
+      alertBox.textContent = 'Invalid email or password. Please try again.';
+    } else if (params.get('timeout') === '1') {
+      alertBox.style.display = 'block';
+      alertBox.style.background = '#fff3cd';
+      alertBox.style.color = '#856404';
+      alertBox.textContent = 'Session timed out due to inactivity. Please log in again.';
+    }
+  </script>
+</body>
+</html>

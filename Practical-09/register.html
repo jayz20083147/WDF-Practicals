@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration | StudentHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h2>StudentHub</h2>
+        <p>Database Registration</p>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="register.html" class="active">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card registration-card">
+      <h1>Student Registration (MySQL)</h1>
+      <p>Enter your details. Data will be saved securely to the MySQL database.</p>
+
+      <form id="registrationForm" action="register.php" method="POST">
+        <input type="hidden" name="form_type" value="registration" />
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="student@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" maxlength="10" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required />
+        </div>
+
+        <div class="form-group">
+          <label for="course">Course</label>
+          <select id="course" name="course" required>
+            <option value="">Select your course</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="CE">Computer Engineering</option>
+            <option value="IT">Information Technology</option>
+            <option value="ME">Mechanical Engineering</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="year">Academic Year</label>
+          <select id="year" name="year" required>
+            <option value="">Select your academic year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group gender-group">
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="Male" required /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+          <label><input type="radio" name="gender" value="Other" /> Other</label>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

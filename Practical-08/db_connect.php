@@ -1,0 +1,13 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "studenthub_db";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Database Connection Failed: " . $conn->connect_error);
+}
+echo "Connected successfully to the StudentHub database!";
+?>

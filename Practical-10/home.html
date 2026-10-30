@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Home Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h1>StudentHub</h1>
+        <p class="tagline">Welcome, <?= htmlspecialchars($_SESSION['student_name'] ?? 'Student') ?>!</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="home.php" class="active">Home</a></li>
+        <li><a href="../Practical-11/manage_students.php">Students</a></li>
+        <li><a href="../Practical-12/manage_events.php">Events</a></li>
+        <li><a href="logout.php" class="btn" style="background:var(--error);">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Student Dashboard</h2>
+      <p>You have successfully logged into the StudentHub secure session portal.</p>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 20px;">
+        <div class="card center" style="background:#f8fafc; border:1px solid var(--border);">
+          <h3 style="color:var(--primary);">Session Status</h3>
+          <p style="margin:8px 0; color:var(--success); font-weight:bold;">Active & Authenticated</p>
+          <small>Role: <strong><?= htmlspecialchars($_SESSION['role'] ?? 'student') ?></strong></small>
+        </div>
+
+        <div class="card center" style="background:#f8fafc; border:1px solid var(--border);">
+          <h3 style="color:var(--accent);">Timeout Window</h3>
+          <p style="margin:8px 0; font-size:1.4rem; font-weight:bold;">30 Mins</p>
+          <small>Inactivity auto-logout</small>
+        </div>
+
+        <div class="card center" style="background:#f8fafc; border:1px solid var(--border);">
+          <h3 style="color:var(--warning);">Student ID</h3>
+          <p style="margin:8px 0; font-size:1.4rem; font-weight:bold;">#<?= htmlspecialchars($_SESSION['student_id'] ?? 'N/A') ?></p>
+          <small>Verified Account</small>
+        </div>
+      </div>
+
+      <div style="margin-top: 25px; display: flex; gap: 10px;">
+        <a href="logout.php" class="btn" style="background: var(--error);">Log Out</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

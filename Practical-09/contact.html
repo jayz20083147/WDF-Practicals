@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | StudentHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h1>StudentHub</h1>
+        <p class="tagline">Contact Support</p>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="register.html">Register</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card registration-card">
+      <h1>Contact Us</h1>
+      <p>Fill out the form below to get in touch with the admin team.</p>
+
+      <form id="contactForm" action="register.php" method="POST">
+        <input type="hidden" name="form_type" value="contact" />
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="student@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Reason for contacting" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Event | StudentHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h1>StudentHub</h1>
+        <p class="tagline">Event Management</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="manage_events.php">Manage Events</a>
+      <a href="add_event.html" class="active">+ Add Event</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card" style="max-width: 500px; margin: 40px auto">
+      <h2>Add New Event</h2>
+      <form
+        method="POST"
+        action="process_add_event.php"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label>Event Name</label>
+          <input type="text" name="event_name" placeholder="Annual Tech Symposium" required />
+        </div>
+
+        <div class="form-group">
+          <label>Event Date</label>
+          <input type="date" name="event_date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Venue</label>
+          <input type="text" name="venue" placeholder="Central Auditorium" required />
+        </div>
+
+        <div class="form-group">
+          <label>Event Poster (JPG/PNG, Max 2MB)</label>
+          <input
+            type="file"
+            name="poster"
+            accept="image/png, image/jpeg, image/jpg"
+            required
+          />
+        </div>
+
+        <div style="margin-top: 15px; display: flex; gap: 10px">
+          <button type="submit">Save Event</button>
+          <a href="manage_events.php" class="btn" style="background: #6c757d">Back</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

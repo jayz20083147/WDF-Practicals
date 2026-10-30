@@ -1,0 +1,41 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.temp
+error_log
+
+# Uploads cache (preserve .gitkeep)
+Practical-12/uploads/*
+!Practical-12/uploads/.gitkeep
+Practical-14/uploads/*
+!Practical-14/uploads/.gitkeep
+
+# Environment and sensitive keys
+.env
+.env.local
+.env.production
+config.local.php
+
+# Archives
+*.zip
+*.tar.gz
+

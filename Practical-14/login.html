@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin & Student Login | StudentHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h1>StudentHub</h1>
+        <p class="tagline">Admin & Student Login</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card" style="max-width: 480px; margin: 40px auto;">
+      <h2 class="center">System Login</h2>
+      <p class="center">Sign in as Admin or Student to access role-specific dashboards.</p>
+
+      <form action="login.php" method="POST">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="admin@studenthub.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" style="width: 100%; margin-top: 10px;">Sign In</button>
+      </form>
+
+      <div style="margin-top: 20px; font-size: 0.85rem; background: #f8fafc; padding: 12px; border-radius: 6px; border: 1px solid var(--border);">
+        <strong>Demo Accounts:</strong><br>
+        • Admin: <code>admin@studenthub.com</code> / <code>password</code><br>
+        • Student: <code>25ce142@charusat.edu.in</code> / <code>password</code>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 StudentHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
