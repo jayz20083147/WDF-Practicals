@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 06 - StudentHub Fetch API Portal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">STUDENT HUB PORTAL</div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">🏠 Home</a>
+            <a href="student-dashboard.html">🎓 Dashboard</a>
+            <a href="students.html">👥 Students Directory</a>
+            <a href="events.html">🎉 Campus Events</a>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 960px; margin: 40px auto; padding: 0 16px;">
+        <div class="card" style="background: #ffffff; padding: 32px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+            <h1>Practical 06: Asynchronous Data Loading with Fetch API & JSON</h1>
+            <p style="color: #64748b; margin: 12px 0 24px; font-size: 1.05rem;">
+                This practical demonstrates asynchronous client-side data handling, loading structured JSON datasets, parsing responses, error handling with promises, and dynamic DOM rendering with real-time filtering, sorting, and pagination.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 24px;">
+                <div style="border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px;">
+                    <h3>👥 Student Directory Explorer</h3>
+                    <p style="color: #64748b; font-size: 0.9rem; margin: 8px 0 16px;">
+                        Interactive student directory with 16 student records fetched from <code>data/students.json</code>. Includes live search, branch filtering, GPA sorting, and pagination.
+                    </p>
+                    <a href="students.html" style="display: inline-block; background: #0284c7; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500;">Open Students Directory &rarr;</a>
+                </div>
+
+                <div style="border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px;">
+                    <h3>🎓 Student Dashboard</h3>
+                    <p style="color: #64748b; font-size: 0.9rem; margin: 8px 0 16px;">
+                        Academic portal hub displaying current semester achievements, CGPA overview, and links to asynchronous portal services.
+                    </p>
+                    <a href="student-dashboard.html" style="display: inline-block; background: #3b82f6; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500;">Open Dashboard &rarr;</a>
+                </div>
+
+                <div style="border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px;">
+                    <h3>🎉 Campus Events</h3>
+                    <p style="color: #64748b; font-size: 0.9rem; margin: 8px 0 16px;">
+                        Dynamic campus event board fetching workshops, hackathons, and tech talks from <code>data/events.json</code>.
+                    </p>
+                    <a href="events.html" style="display: inline-block; background: #10b981; color: #fff; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 500;">Browse Events &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; margin-top: 50px; padding: 20px; color: #64748b; font-size: 0.9rem;">
+        <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p>
+        <p>Student: <strong>Jay zalavadiya</strong> | ID: <strong>25ce142</strong> | CSPIT-CE</p>
+    </footer>
+</body>
+</html>

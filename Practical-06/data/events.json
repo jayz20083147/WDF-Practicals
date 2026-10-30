@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "CodeStorm Hackathon 2026",
+    "category": "Hackathon",
+    "date": "2026-04-15",
+    "venue": "Computer Lab 3, CSPIT",
+    "organizer": "CE Department",
+    "seats": 120,
+    "status": "Upcoming"
+  },
+  {
+    "id": 2,
+    "title": "Web Development Bootcamp",
+    "category": "Workshop",
+    "date": "2026-04-20",
+    "venue": "Seminar Hall B",
+    "organizer": "WDF Faculty Team",
+    "seats": 80,
+    "status": "Open"
+  },
+  {
+    "id": 3,
+    "title": "AI & Deep Learning Symposium",
+    "category": "Seminar",
+    "date": "2026-05-02",
+    "venue": "Central Auditorium",
+    "organizer": "AIML Club",
+    "seats": 250,
+    "status": "Upcoming"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Computing Hands-on",
+    "category": "Workshop",
+    "date": "2026-05-12",
+    "venue": "Cloud Lab 2",
+    "organizer": "IT Department",
+    "seats": 60,
+    "status": "Open"
+  },
+  {
+    "id": 5,
+    "title": "Cybersecurity Capture The Flag",
+    "category": "Competition",
+    "date": "2026-05-18",
+    "venue": "Server Room Hall",
+    "organizer": "CyberShield Club",
+    "seats": 100,
+    "status": "Upcoming"
+  },
+  {
+    "id": 6,
+    "title": "CHARUSAT TechFest 2026",
+    "category": "Festival",
+    "date": "2026-05-25",
+    "venue": "University Campus Grounds",
+    "organizer": "Student Council",
+    "seats": 1500,
+    "status": "Open"
+  }
+]

@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Student Dashboard | Practical 6</title> 
+    <link rel="stylesheet" href="css/styles.css" /> 
+    <style>
+        .dashboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard-table th, .dashboard-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .dashboard-table th {
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: #334155;
+        }
+        .dashboard-btn {
+            background-color: #0284c7;
+            color: white;
+            padding: 6px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .dashboard-btn:hover {
+            background-color: #0369a1;
+        }
+    </style>
+</head> 
+<body> 
+    <header class="topbar"> 
+        <div class="brand">STUDENT HUB PORTAL</div> 
+        <nav class="nav-links"> 
+            <a href="index.html">🏠 Home</a> 
+            <a href="student-dashboard.html" class="active">🎓 Dashboard</a> 
+            <a href="students.html">👥 Students</a> 
+            <a href="events.html">🎉 Events</a> 
+        </nav> 
+    </header> 
+ 
+    <main class="container" style="max-width: 980px; margin: 30px auto; padding: 0 15px;"> 
+        <section class="card" style="background: #ffffff; padding: 24px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);"> 
+            <h2>🎓 Student Dashboard: Jay zalavadiya (25ce142)</h2> 
+            <p style="color: #64748b; margin-top: 6px;">Overview of semester achievements and asynchronous services.</p> 
+ 
+            <table class="dashboard-table"> 
+                <thead>
+                    <tr> 
+                        <th>Category</th> 
+                        <th>Details</th> 
+                        <th>Action</th> 
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>Live Circulars</td> 
+                        <td>16 Dynamic circulars loaded via Fetch API</td> 
+                        <td><button class="dashboard-btn" onclick="location.href='index.html#noticesSection'">View Notices</button></td> 
+                    </tr> 
+                    <tr> 
+                        <td>Campus Events</td> 
+                        <td>16 Events, workshops, and hackathons</td> 
+                        <td><button class="dashboard-btn" onclick="location.href='events.html'">Browse Events</button></td> 
+                    </tr> 
+                    <tr> 
+                        <td>Student Directory</td> 
+                        <td>16 Engineering classmates with GPA search</td> 
+                        <td><button class="dashboard-btn" onclick="location.href='students.html'">Open Directory</button></td> 
+                    </tr> 
+                    <tr> 
+                        <td>Semester Results</td> 
+                        <td>Semester 3 SGPA: 9.42</td> 
+                        <td><button class="dashboard-btn" onclick="alert('Current SGPA: 9.42 | Status: Excellent')">View Results</button></td> 
+                    </tr> 
+                </tbody>
+            </table> 
+        </section> 
+    </main> 
+ 
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #64748b; font-size: 0.9rem;"> 
+        <p>&copy; 2026 <strong>StudentHub Portal</strong> • Charotar University of Science and Technology (CHARUSAT)</p> 
+        <p>Student: <strong>Jay zalavadiya</strong> | ID: <strong>25ce142</strong> | CSPIT-CE</p> 
+    </footer> 
+</body> 
+</html>

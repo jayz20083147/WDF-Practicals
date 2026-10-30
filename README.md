@@ -5,8 +5,9 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Status](https://img.shields.io/badge/Practicals-01--14%20Complete-brightgreen.svg)]()
 
-Comprehensive laboratory implementation of full-stack web applications, secure user authentication, CRUD operations, file uploads, RESTful JSON APIs, and role-based access control for **StudentHub**.
+Comprehensive laboratory implementation of full-stack web engineering, frontend UI/UX architecture, client-side validation, DOM manipulation, asynchronous Fetch APIs, secure user authentication, CRUD operations, file uploads, RESTful JSON APIs, and role-based access control for **StudentHub**.
 
 ---
 
@@ -19,25 +20,28 @@ Comprehensive laboratory implementation of full-stack web applications, secure u
 | **Course / Subject** | Web Development Frameworks |
 | **Subject Code** | `ITUE203` |
 | **Department** | Computer Engineering (CSPIT-CE) |
-| **University** | Chandubhai S. Patel Institute of Technology (CHARUSAT) |
-
-> [!NOTE]
-> **Curriculum Scope**: In accordance with the academic curriculum and submitted laboratory journal (`25CE142_WDF.pdf`), this repository covers **Practical-07 through Practical-14**, focusing on backend server-side engineering with PHP, MySQL relational database management, session authentication, AJAX/Fetch REST APIs, file handling, and administrative dashboards.
+| **University** | Charotar University of Science and Technology (CHARUSAT) |
 
 ---
 
-## List of Practicals & Objectives
+## List of Practicals & Objectives (Complete 01 - 14)
 
-| Practical | Objective / Aim |
-| :--- | :--- |
-| **[Practical-07](./Practical-07/)** | Process submitted registration/contact form data using PHP. Validate and sanitize inputs on the server side and store records in JSON format. Display success and error status messages. |
-| **[Practical-08](./Practical-08/)** | Design the relational database for **StudentHub** with `students`, `events`, and `registrations` tables. Establish PHP database connectivity using `mysqli` with error handling. |
-| **[Practical-09](./Practical-09/)** | Implement secure user registration inserting user records into MySQL via prepared statements. Sanitize inputs, enforce duplicate email validation, securely hash passwords using `password_hash()`, and handle contact queries. |
-| **[Practical-10](./Practical-10/)** | Develop secure authentication and logout functionality using PHP sessions. Verify passwords with `password_verify()`, regenerate session IDs to prevent fixation, restrict unauthorized access, implement a 30-minute session inactivity timeout, and provide Remember-Me capability. |
-| **[Practical-11](./Practical-11/)** | Build a complete Student Management module supporting View, Add, Edit, Delete, Search (by name/email), and Filter (by course) operations using parameterized MySQLi queries. |
-| **[Practical-12](./Practical-12/)** | Develop an Event Management module for administrators to create, view, edit, and delete events, featuring multipart event poster image uploads with strict MIME-type (`JPG`/`PNG`) and file-size (`<= 2MB`) validation. |
-| **[Practical-13](./Practical-13/)** | Create a RESTful PHP JSON API endpoint (`api_events.php`) supporting `GET`, `POST`, `PUT`, and `DELETE` HTTP methods, and consume it seamlessly via JavaScript's `Fetch API` for single-page asynchronous operations without page reload. |
-| **[Practical-14](./Practical-14/)** | Construct a centralized Admin Dashboard aggregating dynamic metrics (total students, total events, latest 5 registrations) with strict role-based access control (RBAC) and role-specific navigation for students and administrators. |
+| Practical | Module / Topic | Objective / Aim |
+| :--- | :--- | :--- |
+| **[Practical-01](./Practical-01/)** | Project Initiation & Wireframing | Initiate the semester-long StudentHub portal by identifying problem scope, user roles, key modules, navigation flow, and 10 core pages. Create sitemap, low-fidelity wireframes, project structure, and Git setup. |
+| **[Practical-02](./Practical-02/)** | Semantic HTML5 Architecture | Build semantic HTML5 skeleton pages for all 10 modules (Login, Signup, Home, Assignments, Attendance, Timetable, Classes, Courses, Result, Profile) with proper tags, links, and forms. |
+| **[Practical-03](./Practical-03/)** | Responsive Glassmorphism UI | Develop a modern, responsive layout using CSS3 Flexbox, Grid, custom properties, and glassmorphic translucent UI effects across desktop, tablet, and mobile screen sizes. |
+| **[Practical-04](./Practical-04/)** | Dynamic DOM Manipulation | Implement interactive DOM manipulation features including Dark/Light theme toggle with `localStorage`, dismissible notification banner with `sessionStorage`, automated carousel slider, announcement modal dialog with Escape-key handling, and collapsible FAQ accordion. |
+| **[Practical-05](./Practical-05/)** | Client-Side Form Validation | Build a robust registration form with real-time JavaScript validation: RegEx checks for student ID (`25ce142` format) and CHARUSAT email, live password strength meter with 4-rule requirements, confirm password matching, and accessible error badges. |
+| **[Practical-06](./Practical-06/)** | Asynchronous Fetch API & JSON | Load and parse structured JSON data asynchronously using JavaScript Fetch API (`students.json` and `events.json`). Implement dynamic client-side search, branch filter, CGPA sorting, pagination, and offline `localStorage` caching. |
+| **[Practical-07](./Practical-07/)** | Form Processing & JSON Storage | Process submitted registration/contact form data using PHP. Validate and sanitize inputs on the server side and store records in JSON format. Display success and error status messages. |
+| **[Practical-08](./Practical-08/)** | Database Design & Connectivity | Design the relational database for **StudentHub** with `students`, `events`, and `registrations` tables. Establish PHP database connectivity using `mysqli` with robust error handling. |
+| **[Practical-09](./Practical-09/)** | Secure MySQL Registration | Implement secure user registration inserting user records into MySQL via prepared statements. Sanitize inputs, enforce duplicate email validation, securely hash passwords using `password_hash()`, and handle contact queries. |
+| **[Practical-10](./Practical-10/)** | Session Auth & RBAC Security | Develop secure authentication and logout functionality using PHP sessions. Verify passwords with `password_verify()`, regenerate session IDs to prevent fixation, restrict unauthorized access, implement a 30-minute session inactivity timeout, and provide Remember-Me capability. |
+| **[Practical-11](./Practical-11/)** | Student Management CRUD | Build a complete Student Management module supporting View, Add, Edit, Delete, Search (by name/email), and Filter (by course) operations using parameterized MySQLi queries. |
+| **[Practical-12](./Practical-12/)** | Event Management & File Upload | Develop an Event Management module for administrators to create, view, edit, and delete events, featuring multipart event poster image uploads with strict MIME-type (`JPG`/`PNG`) and file-size (`<= 2MB`) validation. |
+| **[Practical-13](./Practical-13/)** | Asynchronous Fetch REST API | Create a RESTful PHP JSON API endpoint (`api_events.php`) supporting `GET`, `POST`, `PUT`, and `DELETE` HTTP methods, and consume it seamlessly via JavaScript's `Fetch API` for single-page asynchronous operations without page reload. |
+| **[Practical-14](./Practical-14/)** | Centralized Admin Dashboard | Construct a centralized Admin Dashboard aggregating dynamic metrics (total students, total events, latest 5 registrations) with strict role-based access control (RBAC) and role-specific navigation for students and administrators. |
 
 ---
 
@@ -45,6 +49,69 @@ Comprehensive laboratory implementation of full-stack web applications, secure u
 
 ```text
 wdf/
+├── Practical-01/                  # Practical 1: Initiation, Sitemap & Wireframes
+│   ├── index.html                # Interactive sitemap & architecture explorer
+│   ├── README.md                 # Project requirements, 10-page spec, wireframes & Q&A
+│   └── styles.css                # Visual theme for architecture portal
+│
+├── Practical-02/                  # Practical 2: HTML5 Skeletons (10 Modules)
+│   ├── Assignments.html          # Assignment submissions & status table
+│   ├── Attendance.html           # Monthly attendance & percentage overview
+│   ├── Classes.html              # Classroom schedules & instructor contacts
+│   ├── Courses.html              # Enrolled courses & credits catalog
+│   ├── Home.html                 # Student dashboard landing skeleton
+│   ├── Login.html                # Authentication entry skeleton
+│   ├── Profile.html              # Student profile & academic biography
+│   ├── README.md                 # Semantic HTML5 architecture documentation
+│   ├── Result.html               # Semester grades, SGPA & CGPA breakdown
+│   ├── Signup.html               # New student registration skeleton
+│   └── Timetable.html            # Weekly lecture schedule table
+│
+├── Practical-03/                  # Practical 3: Responsive Glassmorphism UI
+│   ├── css/
+│   │   └── styles.css            # Complete responsive CSS design system
+│   ├── index.html                # Responsive glassmorphism showcase
+│   ├── README.md                 # UI design system & responsive breakpoints
+│   └── style.css                 # Root-level CSS copy
+│
+├── Practical-04/                  # Practical 4: DOM Manipulation
+│   ├── css/
+│   │   └── styles.css            # Theme & modal styles
+│   ├── index.html                # Interactive DOM features showcase
+│   ├── js/
+│   │   └── script.js             # Theme toggle, slider, modal, banner, accordion
+│   ├── README.md                 # Event listeners, state handling & Q&A
+│   ├── script.js                 # Root-level JavaScript copy
+│   └── styles.css                # Root-level stylesheet
+│
+├── Practical-05/                  # Practical 5: Client-Side Form Validation
+│   ├── css/
+│   │   └── styles.css            # Form layout and validation badges
+│   ├── index.html                # Registration validation portal
+│   ├── js/
+│   │   └── register.js           # Real-time regex & password strength logic
+│   ├── README.md                 # RegEx patterns, validation rules & Q&A
+│   ├── register.html             # Registration form with error containers
+│   ├── register.js               # Root-level validator copy
+│   └── styles.css                # Root-level stylesheet
+│
+├── Practical-06/                  # Practical 6: Asynchronous Fetch API & JSON
+│   ├── css/
+│   │   └── styles.css            # Glassmorphism directory styling
+│   ├── data/
+│   │   ├── events.json           # Campus events dataset
+│   │   └── students.json         # 16-record student directory dataset
+│   ├── events.html               # Asynchronous campus events board
+│   ├── index.html                # Practical 6 hub
+│   ├── js/
+│   │   └── student.js            # Fetch API, search, filter, sort & pagination
+│   ├── README.md                 # Fetch API lifecycle, array methods & Q&A
+│   ├── student-dashboard.html    # Academic portal overview
+│   ├── student.js                # Root-level Fetch script copy
+│   ├── student.json              # Fallback student dataset
+│   ├── students.html             # Interactive student directory table
+│   └── styles.css                # Root-level stylesheet
+│
 ├── Practical-07/                  # Practical 7: Form Processing & JSON Storage
 │   ├── contact.html              # Contact form submission page
 │   ├── contacts.json             # Stored contact queries
@@ -98,184 +165,78 @@ wdf/
 │       └── .gitkeep
 │
 ├── Practical-13/                  # Practical 13: Asynchronous Fetch REST API
-│   ├── api_events.php            # REST API (GET, POST, PUT, DELETE)
-│   ├── db_connect.php            # Database connection with JSON error output
-│   ├── event_dashboard.html      # Asynchronous SPA dashboard using Fetch API
+│   ├── api_events.php            # RESTful CRUD API endpoint (JSON)
+│   ├── db_connect.php            # Database connection
+│   ├── event_dashboard.html      # SPA dynamic dashboard
+│   ├── script.js                 # Async/await Fetch consumer
 │   └── styles.css                # Dashboard styling
 │
-├── Practical-14/                  # Practical 14: Comprehensive Admin Dashboard
-│   ├── admin_dashboard.php       # Metrics, total counts & latest 5 registrations
-│   ├── course.html               # Course catalog for students
+├── Practical-14/                  # Practical 14: Centralized Admin Dashboard
+│   ├── admin_dashboard.php       # Metric counters & latest 5 registrations
+│   ├── auth.php                  # Admin role authorization guard
 │   ├── db_connect.php            # Database connection
-│   ├── home.php                  # Student home page
-│   ├── login.html                # Unified login interface
-│   ├── login.php                 # Role-based credential evaluator
-│   ├── logout.php                # Session termination
-│   ├── manage_events.php         # Admin events management link target
-│   ├── manage_students.php       # Admin students management link target
-│   ├── styles.css                # Grid metrics & responsive tables
-│   └── uploads/                  # Upload directory for events
-│       └── .gitkeep
+│   ├── login.php                 # Dual-role authentication redirector
+│   └── styles.css                # Dashboard metrics UI
 │
-├── database/                     # Master Database Assets
-│   └── database.sql              # Master SQL script with full seed data
-│
-├── .gitignore                    # Git ignore file for temporary & OS files
-└── README.md                     # Documentation
+├── .gitignore                    # Git exclusions
+└── README.md                     # Project documentation & execution guide
 ```
 
 ---
 
-## Technologies Used
+## Technologies & Software Requirements
 
-- **Backend**: PHP 8.x (Object-Oriented & Procedural MySQLi, Sessions, JSON API, File Handling)
-- **Database**: MySQL 8.x / MariaDB (Prepared Statements, Foreign Keys, Indexes, Constraints)
-- **Frontend**: HTML5 Semantic Elements, CSS3 (Custom Variables, Flexbox, CSS Grid), JavaScript (ES6+, Fetch API, DOM Manipulation)
-- **Data Exchange**: JSON (`json_encode`, `json_decode`, `fetch`)
-- **Security**:
-  - `password_hash()` & `password_verify()` using strong Bcrypt
-  - SQL Injection prevention using MySQLi Prepared Statements (`bind_param`)
-  - Cross-Site Scripting (XSS) prevention using `htmlspecialchars()`
-  - Session Fixation protection via `session_regenerate_id(true)`
-  - Automatic session timeout (1800s / 30 mins)
+- **Client-Side Technologies**: HTML5, CSS3 (Custom Properties, Flexbox, CSS Grid), JavaScript (ES6+ Standards, Fetch API, DOM API, LocalStorage, SessionStorage).
+- **Server-Side Technologies**: PHP 8.x (Session Handling, Filter Extension, OpenSSL, Prepared Statements).
+- **Database**: MySQL 8.x (InnoDB Engine, Foreign Key Constraints).
+- **Recommended Environment**:
+  - [XAMPP](https://www.apachefriends.org/) (Apache 2.4 + PHP 8.x + MySQL 8.x)
+  - Modern Web Browser (Google Chrome, Firefox, or Safari)
+  - Code Editor: Visual Studio Code
 
 ---
 
-## Software Requirements
+## Instructions to Run Practicals
 
-1. **XAMPP / WampServer / LAMP / MAMP** with:
-   - Apache HTTP Server 2.4+
-   - PHP 7.4+ or 8.x with `mysqli`, `json`, and `session` extensions enabled
-   - MariaDB 10.4+ or MySQL 8.0+
-2. **Modern Web Browser** (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari)
-3. **Git** for version control
+### 1. Practicals 01 to 05 (Static HTML, CSS, DOM Manipulation & Validation)
+These practicals run directly in any web browser without a web server:
+- Double-click `index.html` inside `Practical-01/`, `Practical-02/`, `Practical-03/`, `Practical-04/`, or `Practical-05/`.
+- Or open with the VS Code **Live Server** extension.
 
----
-
-## Setup & Installation Instructions
-
-### 1. Database Setup via phpMyAdmin or MySQL CLI
-
-#### Method A: Using phpMyAdmin (Recommended)
-1. Start **Apache** and **MySQL** services in the XAMPP Control Panel.
-2. Open your web browser and navigate to `http://localhost/phpmyadmin`.
-3. Click on the **Import** tab at the top.
-4. Click **Choose File** and select `database/database.sql` (or `Practical-08/database.sql`).
-5. Click **Import** (or **Go**) at the bottom.
-6. The database `studenthub_db` will be created with tables `students`, `events`, and `registrations`, along with seed data.
-
-#### Method B: Using MySQL Command Line
+### 2. Practical 06 (Fetch API & JSON Data)
+Due to browser CORS restrictions on `file://` fetch requests, run Practical 06 using a local server:
 ```bash
-mysql -u root -p < database/database.sql
+cd Practical-06
+python3 -m http.server 8000
 ```
+Open `http://localhost:8000/students.html` in your browser.
 
----
-
-### 2. Default Test Credentials
-
-The database script pre-populates default demo accounts for testing:
-
-| Role | Email Address | Password | Landing Page |
-| :--- | :--- | :--- | :--- |
-| **Administrator** | `admin@studenthub.com` | `password` | `admin_dashboard.php` |
-| **Student** | `25ce142@charusat.edu.in` | `password` | `home.php` |
-| **Student** | `rahul.patel@example.com` | `password` | `home.php` |
-
----
-
-### 3. Deploying to XAMPP
-
-1. Copy or clone this entire repository into your XAMPP web root directory:
-   - **Windows**: `C:\xampp\htdocs\wdf`
+### 3. Practicals 07 to 14 (PHP & MySQL Backend)
+1. Copy the entire repository into your XAMPP `htdocs` directory:
    - **macOS**: `/Applications/XAMPP/xamppfiles/htdocs/wdf`
-   - **Linux**: `/opt/lampp/htdocs/wdf`
-2. Ensure directory write permissions for JSON files and upload folders:
-   ```bash
-   chmod -R 777 Practical-07/*.json Practical-09/*.json Practical-12/uploads Practical-14/uploads
-   ```
+   - **Windows**: `C:\xampp\htdocs\wdf`
+2. Start the **Apache** and **MySQL** services in the XAMPP Control Panel.
+3. Import the database schema:
+   - Open [phpMyAdmin](http://localhost/phpmyadmin).
+   - Create a database named `studenthub_db`.
+   - Click the **Import** tab and select `Practical-08/database.sql`.
+   - Execute the SQL import.
+4. Verify database connectivity:
+   - Navigate to `http://localhost/wdf/Practical-08/db_connect.php`.
+5. Access the applications:
+   - **Practical 07 Form**: `http://localhost/wdf/Practical-07/register.html`
+   - **Practical 09 DB Register**: `http://localhost/wdf/Practical-09/register.html`
+   - **Practical 10 Authentication**: `http://localhost/wdf/Practical-10/login.html`
+   - **Practical 11 Student CRUD**: `http://localhost/wdf/Practical-11/manage_students.php`
+   - **Practical 12 Event Management**: `http://localhost/wdf/Practical-12/manage_events.php`
+   - **Practical 13 REST API SPA**: `http://localhost/wdf/Practical-13/event_dashboard.html`
+   - **Practical 14 Admin Dashboard**: `http://localhost/wdf/Practical-14/admin_dashboard.php`
 
 ---
 
-## Running Individual Practicals
+## Default Login Credentials
 
-Once Apache and MySQL are running in XAMPP, access each practical through your browser at `http://localhost/wdf/`:
-
-### Practical-07: Form Processing & JSON Persistence
-- **URL**: `http://localhost/wdf/Practical-07/register.html`
-- Submit registration or contact forms. Submissions are saved to `registrations.json` and `contacts.json`.
-
-### Practical-08: Database Connectivity Check
-- **URL**: `http://localhost/wdf/Practical-08/db_connect.php`
-- Displays `"Connected successfully to the StudentHub database!"`.
-
-### Practical-09: Secure MySQL Registration
-- **URL**: `http://localhost/wdf/Practical-09/register.html`
-- Tests duplicate email checking, prepared statement insertion, and bcrypt password hashing.
-
-### Practical-10: Session Authentication & Inactivity Timeout
-- **URL**: `http://localhost/wdf/Practical-10/login.html`
-- Log in with student credentials to test session creation, auto-timeout (30 minutes), and session destruction on logout.
-
-### Practical-11: Student Management (CRUD)
-- **URL**: `http://localhost/wdf/Practical-11/manage_students.php`
-- Search students by name or email, filter by engineering branch (`CSE`, `CE`, `IT`, `ME`), add new students, edit profiles, or delete records.
-
-### Practical-12: Event Management & File Uploads
-- **URL**: `http://localhost/wdf/Practical-12/manage_events.php`
-- Upload event posters with strict MIME type and 2MB size enforcement, view thumbnail previews, edit, and delete events.
-
-### Practical-13: Async Event Management via Fetch REST API
-- **URL**: `http://localhost/wdf/Practical-13/event_dashboard.html`
-- **Testing the API directly**:
-  - `GET http://localhost/wdf/Practical-13/api_events.php`: Returns array of events in JSON format.
-  - `POST http://localhost/wdf/Practical-13/api_events.php` with JSON body `{"event_name":"AI Summit","event_date":"2026-06-15","venue":"Hall A"}`.
-  - `PUT http://localhost/wdf/Practical-13/api_events.php` with JSON body `{"id":1,"event_name":"Updated Name",...}`.
-  - `DELETE http://localhost/wdf/Practical-13/api_events.php?id=1`: Deletes event by ID.
-
-### Practical-14: Admin Analytics & RBAC Dashboard
-- **URL**: `http://localhost/wdf/Practical-14/login.html`
-- Log in as `admin@studenthub.com` to access administrative metrics and latest registrations, or log in as a student to see the restricted view.
-
----
-
-## Enhancements Beyond Original PDF
-
-To ensure all practicals function as fully working web applications, the following enhancements and supporting files were added:
-1. **Master Schema (`database/database.sql`)**: Synthesized the database requirements from the aims and queries into a complete, foreign-key linked schema with seed records.
-2. **Event Processing Scripts (`process_edit_event.php`, `process_delete_event.php`)**: Provided the server-side update and deletion handlers referenced in Practical-12's forms.
-3. **Master Stylesheet (`styles.css`)**: Implemented a responsive design system consistent across all practicals matching the visual appearance of the PDF screenshots.
-4. **Client-Side Form Validation (`Practical-07/script.js`)**: Real-time validation script verifying email patterns, 10-digit mobile phone numbers, and matching passwords.
-5. **Initial Storage Files (`registrations.json`, `contacts.json`)**: Formatted initial JSON storage structures allowing immediate execution out-of-the-box.
-
----
-
-## GitHub Setup & Push Instructions
-
-To push this repository to your GitHub account:
-
-```bash
-# 1. Initialize git repository
-git init
-
-# 2. Stage all practical files and documentation
-git add .
-
-# 3. Commit the practical code
-git commit -m "Add complete WDF practicals (Practical-07 to Practical-14) source code"
-
-# 4. Set default branch to main
-git branch -M main
-
-# 5. Link your GitHub remote repository
-# Replace YOUR_GITHUB_REPOSITORY_URL with your actual GitHub repo link (e.g., https://github.com/username/WDF-Practicals.git)
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-
-# 6. Push to GitHub
-git push -u origin main
-```
-
----
-
-## License
-
-This project is created for educational and academic coursework purposes under the curriculum of **CHARUSAT (CSPIT-CE)**.
+| Role | Email | Password | Access Level |
+| :--- | :--- | :--- | :--- |
+| **Administrator** | `admin@studenthub.com` | `Admin@123` | Full administrative CRUD & metrics access |
+| **Student** | `25ce142@charusat.edu.in` | `Student@123` | Student portal, profile & events access |

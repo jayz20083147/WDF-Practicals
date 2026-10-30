@@ -35,7 +35,8 @@ Practical-14/uploads/*
 .env.production
 config.local.php
 
-# Archives
+# Archives and large PDFs
 *.zip
 *.tar.gz
+*.pdf
 

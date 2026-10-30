@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Project Initiation & Architecture (Practical 1)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">➵</div>
+      <div>
+        <h1>StudentHub</h1>
+        <p class="subtitle">Practical 1: Project Initiation, Sitemap & Wireframes</p>
+      </div>
+    </div>
+    <div class="student-badge">
+      <span>Jay Zalavadiya (25CE142)</span> | <span>ITUE203</span> | <span>CHARUSAT</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Project Overview & Problem Statement</h2>
+      <p>
+        <strong>StudentHub</strong> is an integrated academic portal designed to resolve institutional workflow fragmentation. 
+        It unifies student registration, daily timetables, subject attendance, assignment submissions, course management, 
+        and semester results into a cohesive, user-friendly digital interface.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Interactive Portal Sitemap (10 Core Pages)</h2>
+      <div class="grid">
+        <div class="module-card">
+          <div class="module-icon">🔐</div>
+          <h3>1. Login Page</h3>
+          <p>Authentication gateway for students and faculty members.</p>
+          <code>Login.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📝</div>
+          <h3>2. Signup Page</h3>
+          <p>User registration and onboarding with branch and role selection.</p>
+          <code>Signup.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🏠</div>
+          <h3>3. Home Dashboard</h3>
+          <p>Central hub with notices, announcements, and quick-access cards.</p>
+          <code>Home.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📅</div>
+          <h3>4. Timetable</h3>
+          <p>Weekly lecture timetable grid with venues and faculty details.</p>
+          <code>Timetable.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📊</div>
+          <h3>5. Attendance</h3>
+          <p>Subject-wise attendance tracking percentage and eligibility stats.</p>
+          <code>Attendance.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📖</div>
+          <h3>6. Courses</h3>
+          <p>Curriculum guide, course credits, and instructor profiles.</p>
+          <code>Courses.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🏫</div>
+          <h3>7. Classes</h3>
+          <p>Classroom allocations, lab batch divisions, and meeting links.</p>
+          <code>Classes.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">📋</div>
+          <h3>8. Assignments</h3>
+          <p>Submission tracker, problem statements, and deadline monitors.</p>
+          <code>Assignments.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">🏆</div>
+          <h3>9. Results</h3>
+          <p>Semester grade point evaluations, mark sheets, and CGPA stats.</p>
+          <code>Result.html</code>
+        </div>
+        <div class="module-card">
+          <div class="module-icon">👤</div>
+          <h3>10. Profile</h3>
+          <p>Student identity, academic history, and contact settings.</p>
+          <code>Profile.html</code>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>User Roles & Permissions</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Primary Capabilities</th>
+              <th>Accessible Modules</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Student</strong></td>
+              <td>View timetables, monitor attendance, submit lab work, review results.</td>
+              <td>Home, Timetable, Attendance, Courses, Classes, Assignments, Results, Profile</td>
+            </tr>
+            <tr>
+              <td><strong>Faculty</strong></td>
+              <td>Post notices, manage attendance sheets, evaluate assignments, post remarks.</td>
+              <td>Faculty Dashboard, Attendance Management, Assignment Evaluation</td>
+            </tr>
+            <tr>
+              <td><strong>Admin</strong></td>
+              <td>Full CRUD management of students, faculty, academic events, and system audits.</td>
+              <td>Admin Dashboard, User Management, Event Management, System Settings</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Project Navigation Flow</h2>
+      <div class="flow-diagram">
+        <div class="flow-step">Authentication (Login / Signup)</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-step">Home Portal (Home.html)</div>
+        <div class="flow-arrow">➔</div>
+        <div class="flow-step">Academic Modules (Timetable, Attendance, Results, Labs)</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 StudentHub • CHARUSAT University • CSPIT-CE Department</p>
+  </footer>
+</body>
+</html>
